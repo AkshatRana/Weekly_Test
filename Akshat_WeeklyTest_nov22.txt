@@ -1,0 +1,113 @@
+//Q1. Write the program to print default values for your variables.
+
+class class DefaultsVal{
+	static byte age;
+	static short marks;
+	static int num;
+	static long phoneNum;
+	static float weigth;
+	static double percenTage;
+	static boolean TodayIsNewYear;
+	static char grade;
+	public static void main(String[] args){
+	System.out.println(age);	
+	System.out.println(marks);
+	System.out.println(num);
+	System.out.println(phoneNum);
+	System.out.println(weigth);
+	System.out.println(percenTage);
+	System.out.println(TodayIsNewYear);
+	System.out.println(grade);
+
+	}
+}
+
+
+//Q2. Write a program to replace array element:
+class ReplaceArray{
+	public static void main(String[] args){
+		for(int index=0; index<4; index++){
+		String []name = {"Akshat","Naveen","Bharath","Sheetal"};
+		name[0] = "Nik";
+		System.out.println(name[index]);
+		}
+	}
+}
+
+
+//Q3. What is method. Types of methos, Syntax for static methods, How to call the static methods:
+
+Methods- The code which can re-use where ever we want we can use the code.
+
+Types of Methods- There are two types of methods,
+					1. Static method
+					2. Non static method
+					
+Syntaxfor Static Methods- returntype methodName(parameters){}
+
+How to Call the Static Methods- We can only able to call the static method inside the 
+								main method with writting method name.
+	class CallStaticMethod{
+	static void printApp(){
+		for(int index=0; index<5; index++){
+			System.out.println(index);
+		}
+	}
+	public static void main(String[] args){
+		printApp();
+	}
+}
+
+
+//Q4. What is variable? Types of variables? and Write the program for 3 variables:
+
+Variable- Variable is container to store the specific type of values or data.
+
+Types of Variables- There are 4 types of variables,
+					1. insttance.
+					2. static.
+					3. local.
+					4. parameter.
+				
+1. Program using parameters.
+	class VariablesType{
+	static void printName(int num1, int num2){
+		for(int index=0; index<10; index++){
+			num1= num1*num2;
+			System.out.println(num1);
+		}
+	}
+	public static void main(String[] args){
+		printName(8,10);
+	}
+}
+
+2. Program on static variable and local variable.
+	class VariablesType{
+	static String number[] = {"akshat","naveen","raj","ram"};
+	static void name(String number[]){
+		for(int index=0; index<number.length; index= index+1){
+		System.out.println(number[index]);
+		}
+	}
+	static void age(){
+		int age=10;
+		System.out.println(age);
+	}
+	public static void main(String[] args){
+		name(number);
+		System.out.println();
+		age();
+	}
+}
+
+
+//Q5. Write the program to retrive all the elemnts from array:
+	class RetriveArray{
+	public static void main(String[] args){
+		for(int index=0; index<4; index++){
+		String []name = {"0 index value","1 index value","2 index value","3 index value"};
+		System.out.println(name[index]);
+		}
+	}
+}
